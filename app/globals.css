@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bar-list .tremor-BarList-bar {
+        background-color: rgba(4,137,214,0.1);
+    }
+  }
