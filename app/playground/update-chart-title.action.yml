@@ -1,0 +1,17 @@
+name: update-chart-title
+label: Dashboard - Chart - Update title
+description: Allow to update dashboard page title
+group: Dashboard - Chart
+
+variables:
+  - name: title
+    label: Title
+
+rules:
+  - name: update-chart-title
+    path: ./update-chart-title.beek
+
+files:
+  - path: ./page.tsx
+    rules:
+      - update-chart-title

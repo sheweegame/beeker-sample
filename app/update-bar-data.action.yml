@@ -1,0 +1,21 @@
+name: update-bar-data
+label: Dashboard - Update bar in card
+description: Allow to update an existing bar in a card summary (like Website for example)
+group: Dashboard - Card
+
+variables:
+  - name: targetCardTitle
+    label: Target card title
+  - name: targetBarName
+    label: Target bar name
+  - name: newBarValue
+    label: New bar value
+
+rules:
+  - name: update-bar-data
+    path: ./update-bar-data.beek
+
+files:
+  - path: ./page.tsx
+    rules:
+      - update-bar-data
