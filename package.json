@@ -40,5 +40,8 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
+  },
+  "devDependencies": {
+    "@beeker-tech/cli": "^0.0.7"
   }
 }
