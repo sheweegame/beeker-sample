@@ -8,7 +8,7 @@ variables:
     label: Title
 
 rules:
-  - name: update-title
+  - name: update-page-title
     path: ./update-page-title.beek
 
 files:
