@@ -5,6 +5,7 @@ group: Dashboard
 
 variables:
   - name: title
+    description: The new title of the page
     label: Title
 
 rules:
