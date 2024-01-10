@@ -1,7 +1,7 @@
-name: update-bar-data
-label: Dashboard - Update bar in card
+name: 3. update-bar-data
+label: '[Dashboard] - Update bar in card'
 description: Allow to update an existing bar in a card summary (like Website for example)
-group: Dashboard - Card
+group: '[Dashboard] - Card'
 
 variables:
   - name: targetCardTitle

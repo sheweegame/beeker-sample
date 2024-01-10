@@ -1,0 +1,8 @@
+The language is typescript and the frameworks is react.js.
+
+Remove TextInput with name {{fieldName}} and its first Grid parent, but keep import if there are other TextFields.
+
+Clean unused imports.
+Make sure the code compile.
+
+Make it pretty with prettier.

@@ -1,8 +1,7 @@
-import './globals.css';
+import 'adapters/styles/globals.css';
 
 import { Analytics } from '@vercel/analytics/react';
-import Nav from './nav';
-import Toast from './toast';
+import { Nav, Toast } from './layout/index';
 import { Suspense } from 'react';
 
 export const metadata = {

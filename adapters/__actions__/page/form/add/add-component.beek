@@ -1,0 +1,21 @@
+The language is typescript and the frameworks is react.js.
+
+Add the following directive:
+'use client';
+
+Add the following imports:
+- import Section from './section';
+- import useForm from './hook';
+
+Add a component named Form
+
+With the following template:
+(
+    <form onSubmit={formProps.handleSubmit}>
+        <Section formProps={formProps} />
+    </form>
+);
+
+Make sure Section is exported as default;
+
+Make it pretty with prettier.

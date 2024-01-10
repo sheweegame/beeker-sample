@@ -1,5 +1,5 @@
 import { Title, Text } from '@tremor/react';
-import Search from './users/search';
+import Search from './search';
 
 export default async function Loading() {
   return (

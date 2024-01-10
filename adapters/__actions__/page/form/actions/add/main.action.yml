@@ -1,0 +1,36 @@
+name: 3. add-form-actions
+label: '[Main] - Add form actions to page'
+description: 'Add a form actions to a page.'
+group: '[Main] - Page'
+
+variables:
+  - name: url
+    label: Page url
+    default_value: /users/create
+  - name: cancelButtonLabel
+    label: Cancel Button Label
+    default_value: Cancel
+  - name: submitButtonLabel
+    label: Submit Button Label
+    default_value: Create
+
+rules:
+  - name: add-actions-props
+    path: ./add-actions-props.beek
+  - name: add-actions
+    path: ./add-actions.beek
+  - name: add-actions-to-form
+    path: ./add-actions-to-form.beek
+
+files:
+  - path: ../../../../../../app{{url}}/form/actions/actions-props.ts
+    rules:
+      - add-actions-props
+  - path: ../../../../../../app{{url}}/form/actions/actions.tsx
+    rules:
+      - add-actions
+  - path: ../../../../../../app{{url}}/form/form.tsx
+    rules:
+      - add-actions-to-form
+    
+    

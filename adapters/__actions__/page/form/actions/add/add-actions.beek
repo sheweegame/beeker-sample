@@ -1,0 +1,35 @@
+The language is typescript and the frameworks is react.js.
+
+Add the following imports:
+- import { MouseEvent } from 'react';
+- import { Button, Grid } from '@tremor/react';
+- import { useRouter } from 'next/navigation';
+- import { ActionsProps } from './actions-props';
+
+Add a component named Actions
+
+With The following constants:
+- const { formProps } = props;
+- const { isValid, dirty } = formProps;
+- const router = useRouter();
+- const goBack = (event: MouseEvent) => {
+    event.preventDefault();
+
+    router.back();
+  };
+
+With the following template:
+(
+  <Grid className="w-1/3 mt-8 flex space-x-4">
+    <Button variant="secondary" onClick={goBack}>
+      {{cancelButtonLabel}}
+    </Button>
+    <Button type="submit" disabled={!isValid || !dirty}>
+      {{submitButtonLabel}}
+    </Button>
+  </Grid>
+);
+
+Make sure Actions is exported as default;
+
+Make it pretty with prettier.

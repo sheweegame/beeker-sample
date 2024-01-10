@@ -1,0 +1,55 @@
+name: 2. add-form
+label: '[Main] - Add form to page'
+description: 'Add a form to a page.'
+group: '[Main] - Page'
+
+variables:
+  - name: url
+    label: Page url
+    default_value: /users/create
+
+rules:
+  - name: add-values
+    path: ./add-values.beek
+  - name: add-initial-values
+    path: ./add-initial-values.beek
+  - name: add-validation
+    path: ./add-validation.beek
+  - name: add-hook
+    path: ./add-hook.beek
+  - name: add-section-props
+    path: ./add-section-props.beek
+  - name: add-section
+    path: ./add-section.beek
+  - name: add-component
+    path: ./add-component.beek
+  - name: add-form-to-page
+    path: ./add-form-to-page.beek
+
+files:
+  - path: ../../../../../app{{url}}/form/values.ts
+    rules:
+      - add-values
+  - path: ../../../../../app{{url}}/form/initial-values.ts
+    rules:
+      - add-initial-values
+  - path: ../../../../../app{{url}}/form/validation-schema.ts
+    rules:
+      - add-validation
+  - path: ../../../../../app{{url}}/form/hook.tsx
+    rules:
+      - add-hook
+  - path: ../../../../../app{{url}}/form/section-props.ts
+    rules:
+      - add-section-props
+  - path: ../../../../../app{{url}}/form/section.tsx
+    rules:
+      - add-section
+  - path: ../../../../../app{{url}}/form/form.tsx
+    rules:
+      - add-component
+  - path: ../../../../../app{{url}}/page.tsx
+    rules:
+      - add-form-to-page
+    
+    

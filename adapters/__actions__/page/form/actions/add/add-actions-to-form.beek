@@ -1,0 +1,15 @@
+The language is typescript and the framework is react.js.
+
+Add the following directive:
+'use client';
+
+Add the following imports:
+- import Actions from './actions/actions';
+
+Add the following template inside existing template inside form tag at the end :
+<Actions formProps={formProps} />
+
+Do not import react if not needed.
+Make sure Page is exported as default;
+
+Make it pretty with prettier.

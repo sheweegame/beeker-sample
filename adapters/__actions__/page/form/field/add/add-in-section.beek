@@ -1,0 +1,29 @@
+The language is typescript and the frameworks is react.js.
+
+Add the following imports:
+- import { Grid, TextInput, Text } from '@tremor/react';
+- import { hasErrorMessage, getErrorMessage } from '@adapters/_utils/forms';
+- import { SectionProps } from './section-props';
+
+Add the following constants to Section component:
+- const { formProps } = props; 
+- const { values, handleChange, handleBlur } = formProps;
+
+Add the following template inside existing template in {{position}} position:
+ <Grid className="flex-col w-{{width}}">
+    <Text>{{fieldName}}</Text>
+    <TextInput
+    id="{{fieldName}}"
+    name="{{fieldName}}"
+    placeholder="{{placeholder}}"
+    value={values?.{{fieldName}}}
+    onChange={handleChange}
+    onBlur={handleBlur}
+    error={hasErrorMessage(formProps, '{{fieldName}}')}
+    errorMessage={hasErrorMessage(formProps, '{{fieldName}}')}
+    />
+</Grid>
+
+Make first letter of Text tag content uppercase.
+
+Make it pretty with prettier.

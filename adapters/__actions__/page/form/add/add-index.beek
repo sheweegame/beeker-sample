@@ -1,0 +1,5 @@
+The language is typescript.
+
+Add a ; at the end of the following code: 
+
+export { default } from './form'

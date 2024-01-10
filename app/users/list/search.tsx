@@ -11,6 +11,7 @@ export default function Search({ disabled }: { disabled?: boolean }) {
 
   function handleSearch(term: string) {
     const params = new URLSearchParams(window.location.search);
+
     if (term) {
       params.set('q', term);
     } else {
@@ -23,7 +24,7 @@ export default function Search({ disabled }: { disabled?: boolean }) {
   }
 
   return (
-    <div className="relative mt-5 max-w-md">
+    <div className="relative max-w-md">
       <label htmlFor="search" className="sr-only">
         Search
       </label>
@@ -48,7 +49,6 @@ export default function Search({ disabled }: { disabled?: boolean }) {
           onChange={(e) => handleSearch(e.target.value)}
         />
       </div>
-
       {isPending && (
         <div className="absolute right-0 top-0 bottom-0 flex items-center justify-center">
           <svg

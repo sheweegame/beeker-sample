@@ -1,0 +1,15 @@
+The language is typescript and the framework is react.js.
+
+Add the following imports:
+- import { Card } from '@tremor/react';
+- import Form from './form/form';
+
+Add the following template inside existing template:
+<Card className="mt-6 w-96">
+    <Form />
+</Card>
+
+Do not import react if not needed.
+Make sure Page is exported as default;
+
+Make it pretty with prettier.

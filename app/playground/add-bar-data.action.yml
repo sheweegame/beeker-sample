@@ -1,7 +1,7 @@
-name: add-bar-data
-label: Dashboard - Add bar in card
+name: 2. add-bar-data
+label: '[Dashboard] - Add bar in card'
 description: Allow to add a new bar in a card summary (like Website for example)
-group: Dashboard - Card
+group: '[Dashboard] - Card'
 
 variables:
   - name: targetCardTitle

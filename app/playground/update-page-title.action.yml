@@ -1,7 +1,7 @@
-name: update-page-title
-label: Dashboard - Update page title
+name: 1. update-page-title
+label: '[Dashboard] - Update page title'
 description: Allow to update dashboard page title
-group: Dashboard
+group: '[Dashboard] - Page'
 
 variables:
   - name: title

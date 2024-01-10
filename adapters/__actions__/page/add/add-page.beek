@@ -1,0 +1,19 @@
+The language is typescript and the framework is react.js.
+
+Create a component named Page in PascalCase with:
+
+The following imports:
+- import { Title, Text } from '@tremor/react';
+
+And the following template:
+(
+  <main className="p-4 md:p-10 mx-auto max-w-7xl">
+    <Title>{{title}}</Title>
+    <Text>{{subtitle}}</Text>
+  </main>
+)
+
+Do not import react if not needed.
+Make sure Page is exported as default;
+
+Make it pretty with prettier.

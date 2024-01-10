@@ -1,0 +1,17 @@
+The language is typescript and the frameworks is react.js.
+
+Add the following imports:
+- import { Grid } from '@tremor/react';
+- import { SectionProps } from './section-props';
+
+Add a component named Section with parameter:
+- props: SectionProps
+
+And the following template:
+(
+    <Grid className="flex-col space-y-4"></Grid>
+);
+
+Make sure Section is exported as default;
+
+Make it pretty with prettier.

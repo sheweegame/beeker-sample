@@ -1,7 +1,7 @@
-name: update-card-title
-label: Dashboard - Update title in card
+name: 1. update-card-title
+label: '[Dashboard] - Update title in card'
 description: Allow to update title in a card summary (like Website for example)
-group: Dashboard - Card
+group: '[Dashboard] - Card'
 
 variables:
   - name: oldName

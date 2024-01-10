@@ -1,0 +1,36 @@
+name: 5. remove-form-field
+label: '[Main] - Remove form field from form'
+description: 'Remove a form field from a form.'
+group: '[Main] - Page'
+
+variables:
+  - name: url
+    label: Page url
+    default_value: /users/create
+  - name: fieldName
+    label: Field Name
+    default_value: name
+
+rules:
+  - name: remove-in-values
+    path: ./remove-in-values.beek
+  - name: remove-in-initial-values
+    path: ./remove-in-initial-values.beek
+  - name: remove-in-validation
+    path: ./remove-in-validation.beek
+  - name: remove-in-section
+    path: ./remove-in-section.beek
+
+files:
+  - path: ../../../../../../app{{url}}/form/section.tsx
+    rules:
+      - remove-in-section
+  - path: ../../../../../../app{{url}}/form/values.ts
+    rules:
+      - remove-in-values
+  - path: ../../../../../../app{{url}}/form/initial-values.ts
+    rules:
+      - remove-in-initial-values
+  - path: ../../../../../../app{{url}}/form/validation-schema.ts
+    rules:
+      - remove-in-validation

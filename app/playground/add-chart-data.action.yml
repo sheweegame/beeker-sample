@@ -1,7 +1,7 @@
-name: add-chart-data
-label: Dashboard - Add data in chart
+name: 2. add-chart-data
+label: '[Dashboard] - Add data in chart'
 description: Allow to add data in chart
-group: Dashboard - Chart
+group: '[Dashboard] - Chart'
 
 variables:
   - name: month

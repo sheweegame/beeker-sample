@@ -1,0 +1,5 @@
+The language is typescript.
+
+Add an attribute {{fieldName}} of type string {{requirement}} to interface FormValues.
+
+Make it pretty with prettier.

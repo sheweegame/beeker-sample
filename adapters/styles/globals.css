@@ -6,4 +6,8 @@
     .bar-list .tremor-BarList-bar {
         background-color: rgba(4,137,214,0.1);
     }
-  }
+}
+
+nextjs-portal {
+    display: none;
+}
