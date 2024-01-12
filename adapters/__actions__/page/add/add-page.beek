@@ -3,12 +3,12 @@ The language is typescript and the framework is react.js.
 Create a component named Page in PascalCase with:
 
 The following imports:
-- import { Title, Text } from '@tremor/react';
+- import { Text } from '@tremor/react';
 
 And the following template:
 (
   <main className="p-4 md:p-10 mx-auto max-w-7xl">
-    <Title>{{title}}</Title>
+    <h1 className="text-left font-medium text-3xl">{{title}}</h1>
     <Text>{{subtitle}}</Text>
   </main>
 )

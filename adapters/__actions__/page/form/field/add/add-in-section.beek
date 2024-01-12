@@ -10,7 +10,7 @@ Add the following constants to Section component:
 - const { values, handleChange, handleBlur } = formProps;
 
 Add the following template inside existing template in {{position}} position:
- <Grid className="flex-col w-{{width}}">
+ <Grid className="flex-col mt-2 w-{{width}}">
     <Text>{{fieldName}}</Text>
     <TextInput
     id="{{fieldName}}"

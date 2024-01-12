@@ -2,7 +2,6 @@ import 'adapters/styles/globals.css';
 
 import { Analytics } from '@vercel/analytics/react';
 import { Nav, Toast } from './layout/index';
-import { Suspense } from 'react';
 
 export const metadata = {
   title: 'Beeker - Demo dashboard',
@@ -18,9 +17,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className="h-full bg-gray-50">
       <body className="h-full">
-        <Suspense>
-          <Nav />
-        </Suspense>
+        <Nav />
         {children}
         <Analytics />
         <Toast />

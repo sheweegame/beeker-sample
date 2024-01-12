@@ -1,0 +1,19 @@
+name: 5. update-stats-card-title
+label: '[Page] [Stats] - Update title in stats card'
+description: Allow to update title in a stats card
+group: '[Page] [Stats] - Update'
+
+variables:
+  - name: oldName
+    label: Old name
+  - name: newName
+    label: New name
+
+rules:
+  - name: update-stats-card-title
+    path: ./update-stats-card-title.beek
+
+files:
+  - path: ../../cards/stats.tsx
+    rules:
+      - update-stats-card-title

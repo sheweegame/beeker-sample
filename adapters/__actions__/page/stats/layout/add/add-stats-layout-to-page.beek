@@ -1,0 +1,13 @@
+The language is typescript and the framework is react.js.
+
+Add the following imports:
+- import { Grid } from '@tremor/react';
+
+Add the following template inside existing template:
+<Grid numItemsSm={2} numItemsLg={3} className="gap-6 mt-6">
+</Grid>
+
+Do not import react if not needed.
+Make sure Page is exported as default;
+
+Make it pretty with prettier.

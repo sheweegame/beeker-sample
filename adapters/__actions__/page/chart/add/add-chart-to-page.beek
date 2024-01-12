@@ -1,0 +1,12 @@
+The language is typescript and the framework is react.js.
+
+Add the following imports:
+- import Chart from './cards/chart';
+
+Add the following template inside existing template, after Grid:
+<Chart />
+
+Do not import react if not needed.
+Make sure Page is exported as default;
+
+Make it pretty with prettier.

@@ -1,7 +1,7 @@
-name: 3. update-bar-data
-label: '[Dashboard] - Update bar in card'
+name: 4. update-bar-data
+label: '[Page] [Stats] - Update - Update bar in card'
 description: Allow to update an existing bar in a card summary (like Website for example)
-group: '[Dashboard] - Card'
+group: '[Page] [Stats] - Update'
 
 variables:
   - name: targetCardTitle
@@ -16,6 +16,6 @@ rules:
     path: ./update-bar-data.beek
 
 files:
-  - path: ./page.tsx
+  - path: ../../data/bars.ts
     rules:
       - update-bar-data

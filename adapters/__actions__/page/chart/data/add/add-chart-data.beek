@@ -1,0 +1,12 @@
+The language is typescript and the frameworks are react.js and next.js.
+
+Consider theses categories:
+{{categories}}
+
+Create an array of strings and add it to categories constant;
+
+Consider this data:
+{{data}}
+
+Create an array of js objects and add it to data constant;
+

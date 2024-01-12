@@ -1,7 +1,7 @@
-name: 4. add-form-field
-label: '[Generic] - Add form field to page'
+name: 3. add-form-field
+label: '[Page] [Form] - Add form field to page'
 description: 'Add a form field to a page.'
-group: '[Generic] - Page'
+group: '[Page] [Form] - Add'
 
 variables:
   - name: url

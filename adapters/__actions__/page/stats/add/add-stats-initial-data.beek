@@ -1,0 +1,7 @@
+The language is typescript.
+
+Add the following imports:
+- import { BarData } from './bar.interface';
+
+Add exported constant named categories with value an empty array.
+Add exported constant named data with value an empty array.

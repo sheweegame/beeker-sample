@@ -1,0 +1,4 @@
+The language is typescript.
+
+Add exported constant named categories with value an empty array.
+Add exported constant named data with value an empty array.

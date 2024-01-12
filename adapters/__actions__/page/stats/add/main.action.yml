@@ -1,0 +1,56 @@
+name: 2. add-stats-card
+label: '[Page] [Stats] - Add stats card to a page'
+description: Allow to add new stats card to a page
+group: '[Page] [Stats] - Add'
+
+variables:
+  - name: url
+    label: Page url
+    default_value: /dashboard
+  - name: id
+    label: Id
+    default_value: Website
+    description: "Should follow PascalCase convention"
+  - name: title
+    label: Title
+    default_value: Website
+  - name: subtitle
+    label: Subtitle
+    default_value: 10,234 Total Views
+  - name: categories
+    label: Categories
+    default_value: "'Page', 'Views'"
+    description: "The categories should follow the pattern: 'category1', 'category2'"
+  - name: data
+    label: Data
+    description: 'The data should follow the pattern: category1: value1-1, category1: value2-1; category1: value1-2, category2: value2-2;'
+    default_value: "'/home', value: 1230; name: '/contact', value: 751; name: '/gallery', value: 471; name: '/august-discount-offer', value: 280; name: '/case-studies', value: 78;"
+
+rules:
+  - name: add-bar-interface
+    path: ./add-bar-interface.beek
+  - name: add-stats-initial-data
+    path: ./add-stats-initial-data.beek
+  - name: add-stats-component
+    path: ./add-stats-component.beek
+  - name: add-stats-to-page
+    path: ./add-stats-to-page.beek
+  - name: add-stats-data
+    path: ./add-stats-data.beek
+
+files:
+  - path: ../../../../../app{{url}}/data/stats/bar.interface.ts
+    rules:
+      - add-bar-interface
+  - path: ../../../../../app{{url}}/data/stats/{{id}}/stats.ts
+    rules:
+      - add-stats-initial-data
+  - path: ../../../../../app{{url}}/cards/stats/{{id}}/card.tsx
+    rules:
+      - add-stats-component
+  - path: ../../../../../app{{url}}/page.tsx
+    rules:
+      - add-stats-to-page
+  - path: ../../../../../app{{url}}/data/stats/{{id}}/stats.ts
+    rules:
+      - add-stats-data

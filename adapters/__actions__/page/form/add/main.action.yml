@@ -1,7 +1,7 @@
-name: 2. add-form
-label: '[Generic] - Add form to page'
-description: 'Add a form to a page.'
-group: '[Generic] - Page'
+name: 1. add-form
+label: '[Page] [Form] - Add form to page'
+description: 'Allow to add a form to a page.'
+group: '[Page] [Form] - Add'
 
 variables:
   - name: url

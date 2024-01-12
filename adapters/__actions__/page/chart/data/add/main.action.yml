@@ -1,0 +1,26 @@
+name: 2. add-chart-data
+label: '[Page] [Chart] - Add data in chart'
+description: Allow to add data in chart
+group: '[Page] [Chart] - Add'
+
+variables:
+  - name: url
+    label: Page url
+    default_value: /dashboard
+  - name: categories
+    label: Categories
+    description: "The categories should follow the pattern: 'category1', 'category2'"
+    default_value: "'Sales', 'Profit'"
+  - name: data
+    label: Data
+    description: 'The data should follow the pattern: category1: value1-1, category1: value2-1; category1: value1-2, category2: value2-2;'
+    default_value: "'Jan 21', Sales: 2890, Profit: 2400;Month: 'Feb 21', Sales: 1890, Profit: 1398;Month: 'Jan 22', Sales: 3890, Profit: 2980;"
+
+rules:
+  - name: add-chart-data
+    path: ./add-chart-data.beek
+
+files:
+  - path: ../../../../../../app{{url}}/data/chart/chart.ts
+    rules:
+      - add-chart-data

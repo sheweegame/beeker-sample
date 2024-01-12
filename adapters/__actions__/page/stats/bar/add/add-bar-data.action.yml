@@ -1,7 +1,7 @@
-name: 2. add-bar-data
-label: '[Dashboard] - Add bar in card'
+name: 3. add-bar-data
+label: '[Page] [Stats] - Add bar in card'
 description: Allow to add a new bar in a card summary (like Website for example)
-group: '[Dashboard] - Card'
+group: '[Page] [Stats] - Add'
 
 variables:
   - name: targetCardTitle
@@ -16,6 +16,6 @@ rules:
     path: ./add-bar-data.beek
 
 files:
-  - path: ./page.tsx
+  - path: ../../data/bars.ts
     rules:
       - add-bar-data

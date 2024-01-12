@@ -1,0 +1,38 @@
+The language is typescript and the frameworks are react.js and next.js.
+
+Create a component named Chart in PascalCase with:
+
+The following directive:
+'use client';
+
+The following imports:
+- import { Card, Text, Title, BarList, Flex } from '@tremor/react';
+- import { categories, data } from '../../../data/stats/{{id}}/stats';
+
+And the following template:
+(
+   <Card>
+      <Title>{{title}}</Title>
+      <Flex justifyContent="start" alignItems="baseline" className="space-x-2">
+        <Text>{{subtitle}}</Text>
+      </Flex>
+      <Flex className="mt-6">
+        {categories.map((category) => (
+          <Text key={category}>{category}</Text>
+        ))}
+      </Flex>
+      <BarList
+        color="blue"
+        data={data}
+        valueFormatter={(number: number) =>
+          Intl.NumberFormat('en-us').format(number).toString()
+        }
+        className="mt-2 bar-list"
+      />
+    </Card>
+)
+
+Do not import react if not needed.
+Make sure Chart is exported as default;
+
+Make it pretty with prettier.

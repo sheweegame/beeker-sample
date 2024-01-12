@@ -1,7 +1,7 @@
-name: 5. remove-form-field
-label: '[Generic] - Remove form field from form'
+name: 4. remove-form-field
+label: '[Page] [Form] - Remove - Remove form field from form'
 description: 'Remove a form field from a form.'
-group: '[Generic] - Page'
+group: '[Page] [Form] - Remove'
 
 variables:
   - name: url

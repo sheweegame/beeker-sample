@@ -1,7 +1,7 @@
-name: 3. add-form-actions
-label: '[Generic] - Add form actions to page'
+name: 2. add-form-actions
+label: '[Page] [Form] - Add form actions to page'
 description: 'Add a form actions to a page.'
-group: '[Generic] - Page'
+group: '[Page] [Form] - Add'
 
 variables:
   - name: url

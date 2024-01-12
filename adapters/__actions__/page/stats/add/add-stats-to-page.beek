@@ -1,0 +1,12 @@
+The language is typescript and the framework is react.js.
+
+Add the following imports:
+- import {{id}}Stats from './cards/stats/{{id}}/card';
+
+Add the following template inside Grid in existing template:
+<{{id}}Stats />
+
+Do not import react if not needed.
+Make sure Page is exported as default;
+
+Make it pretty with prettier.

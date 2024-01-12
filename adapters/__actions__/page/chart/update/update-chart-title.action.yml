@@ -1,7 +1,7 @@
-name: 1. update-chart-title
-label: '[Dashboard] - Chart - Update title'
+name: 3. update-chart-title
+label: '[Page] [Chart] - Update title'
 description: Allow to update dashboard page title
-group: '[Dashboard] - Chart'
+group: '[Page] [Chart] - Update'
 
 variables:
   - name: title
@@ -12,6 +12,6 @@ rules:
     path: ./update-chart-title.beek
 
 files:
-  - path: ./page.tsx
+  - path: ../../cards/chart.tsx
     rules:
       - update-chart-title

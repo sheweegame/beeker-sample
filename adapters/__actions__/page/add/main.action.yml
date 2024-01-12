@@ -1,24 +1,26 @@
 name: 1. add-page
-label: '[Generic] - Add page'
+label: '[Page] - Add page'
 description: 'Add a new page.'
-group: '[Generic] - Page'
+group: '[Page] - Add'
 
 variables:
   - name: title
     label: Title
-    default_value: New User
   - name: subtitle
     label: Subtitle
-    default_value: Create a new local user.
   - name: url
     label: Url
-    default_value: /users/create
 
 rules:
   - name: add-page
     path: ./add-page.beek
+  - name: add-page-route
+    path: ./add-page-route.beek
 
 files:
   - path: ../../../../app{{url}}/page.tsx
     rules:
       - add-page
+  - path: ../../../../app/layout/routes.ts
+    rules:
+      - add-page-route

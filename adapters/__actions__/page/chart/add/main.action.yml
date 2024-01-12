@@ -1,0 +1,34 @@
+name: 1. add-chart-card
+label: '[Page] [Chart] - Add chart card to page'
+description: Allow to add a chart card to a page
+group: '[Page] [Chart] - Add'
+
+variables:
+  - name: url
+    label: Page url
+    default_value: /dashboard
+  - name: title
+    label: Title
+    default_value: Performance
+  - name: subtitle
+    label: Subtitle
+    default_value: Comparison between Sales and Profit
+
+rules:
+  - name: add-chart-initial-data
+    path: ./add-chart-initial-data.beek
+  - name: add-chart-component
+    path: ./add-chart-component.beek
+  - name: add-chart-to-page
+    path: ./add-chart-to-page.beek
+
+files:
+  - path: ../../../../../app{{url}}/data/chart/chart.ts
+    rules:
+      - add-chart-initial-data
+  - path: ../../../../../app{{url}}/cards/chart.tsx
+    rules:
+      - add-chart-component
+  - path: ../../../../../app{{url}}/page.tsx
+    rules:
+      - add-chart-to-page

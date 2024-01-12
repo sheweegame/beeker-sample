@@ -6,11 +6,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
-
-const navigation = [
-  { name: 'Dashboard', href: '/' },
-  { name: 'Users', href: '/users/list' }
-];
+import { routes } from './routes';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
@@ -52,7 +48,7 @@ export default function Navbar({ user }: { user: any }) {
                   </svg>
                 </div>
                 <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
-                  {navigation.map((item) => (
+                  {routes.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
@@ -144,7 +140,7 @@ export default function Navbar({ user }: { user: any }) {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pt-2 pb-3">
-              {navigation.map((item) => (
+              {routes.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
