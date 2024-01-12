@@ -16,6 +16,6 @@ With the following template:
     </form>
 );
 
-Make sure Section is exported as default;
+Make sure Form is exported as default;
 
 Make it pretty with prettier.
