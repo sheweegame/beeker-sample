@@ -15,12 +15,8 @@ variables:
     default_value: Enter a value
   - name: requirement
     label: Requirement
-    description: 'Possible values: (required or nor required)'
+    description: 'Possible values: (required or optional)'
     default_value: required
-  - name: width
-    label: Width (%)
-    description: 'Possible values: (25, 50, 75, 100, etc...)'
-    default_value: 100
   - name: position
     label: Position
     description: 'Possible values: (last, first, second, third...)'

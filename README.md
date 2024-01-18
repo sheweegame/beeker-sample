@@ -39,6 +39,10 @@ You should now be able to access the application at [http://localhost:3000](http
 npm run beeker
 ```
 
+```console copy
+npm run beeker action preview -- -p ./adapters/__actions__/page/add/main.action.yml
+```
+
 ## Stack
 
 This project uses the following stack:
