@@ -11,9 +11,4 @@ variables:
 
 rules:
   - name: update-stats-card-title
-    path: ./update-stats-card-title.beek
-
-files:
-  - path: ../../cards/stats.tsx
-    rules:
-      - update-stats-card-title
+    target: ../../cards/stats.tsx

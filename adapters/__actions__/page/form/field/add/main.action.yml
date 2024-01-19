@@ -24,26 +24,11 @@ variables:
 
 rules:
   - name: add-in-values
-    path: ./add-in-values.beek
+    target: ../../../../../../app{{url}}/form/values.ts
   - name: add-in-initial-values
-    path: ./add-in-initial-values.beek
+    target: ../../../../../../app{{url}}/form/initial-values.ts
   - name: add-in-validation
-    path: ./add-in-validation.beek
+    target: ../../../../../../app{{url}}/form/validation-schema.ts
   - name: add-in-section
-    path: ./add-in-section.beek
-
-files:
-  - path: ../../../../../../app{{url}}/form/values.ts
-    rules:
-      - add-in-values
-  - path: ../../../../../../app{{url}}/form/initial-values.ts
-    rules:
-      - add-in-initial-values
-  - path: ../../../../../../app{{url}}/form/validation-schema.ts
-    rules:
-      - add-in-validation
-  - path: ../../../../../../app{{url}}/form/section.tsx
-    rules:
-      - add-in-section
-    
+    target: ../../../../../../app{{url}}/form/section.tsx
     

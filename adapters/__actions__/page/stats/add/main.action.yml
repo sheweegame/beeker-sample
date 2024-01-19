@@ -28,29 +28,12 @@ variables:
 
 rules:
   - name: add-bar-interface
-    path: ./add-bar-interface.beek
+    target: ../../../../../app{{url}}/data/stats/bar.interface.ts
   - name: add-stats-initial-data
-    path: ./add-stats-initial-data.beek
+    target: ../../../../../app{{url}}/data/stats/{{id}}/stats.ts
   - name: add-stats-component
-    path: ./add-stats-component.beek
+    target: ../../../../../app{{url}}/cards/stats/{{id}}/card.tsx
   - name: add-stats-to-page
-    path: ./add-stats-to-page.beek
+    target: ../../../../../app{{url}}/page.tsx
   - name: add-stats-data
-    path: ./add-stats-data.beek
-
-files:
-  - path: ../../../../../app{{url}}/data/stats/bar.interface.ts
-    rules:
-      - add-bar-interface
-  - path: ../../../../../app{{url}}/data/stats/{{id}}/stats.ts
-    rules:
-      - add-stats-initial-data
-  - path: ../../../../../app{{url}}/cards/stats/{{id}}/card.tsx
-    rules:
-      - add-stats-component
-  - path: ../../../../../app{{url}}/page.tsx
-    rules:
-      - add-stats-to-page
-  - path: ../../../../../app{{url}}/data/stats/{{id}}/stats.ts
-    rules:
-      - add-stats-data
+    target: ../../../../../app{{url}}/data/stats/{{id}}/stats.ts

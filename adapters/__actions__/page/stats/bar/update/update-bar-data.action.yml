@@ -13,9 +13,4 @@ variables:
 
 rules:
   - name: update-bar-data
-    path: ./update-bar-data.beek
-
-files:
-  - path: ../../data/bars.ts
-    rules:
-      - update-bar-data
+    target: ../../data/bars.ts

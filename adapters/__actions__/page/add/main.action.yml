@@ -13,14 +13,6 @@ variables:
 
 rules:
   - name: add-page
-    path: ./add-page.beek
+    target: ../../../../app{{url}}/page.tsx
   - name: add-page-route
-    path: ./add-page-route.beek
-
-files:
-  - path: ../../../../app{{url}}/page.tsx
-    rules:
-      - add-page
-  - path: ../../../../app/layout/routes.ts
-    rules:
-      - add-page-route
+    target: ../../../../app/layout/routes.ts

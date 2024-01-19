@@ -10,9 +10,4 @@ variables:
 
 rules:
   - name: add-stats-layout-to-page
-    path: ./add-stats-layout-to-page.beek
-
-files:
-  - path: ../../../../../../app{{url}}/page.tsx
-    rules:
-      - add-stats-layout-to-page
+    target: ../../../../../../app{{url}}/page.tsx

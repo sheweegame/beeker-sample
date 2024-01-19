@@ -13,24 +13,10 @@ variables:
 
 rules:
   - name: remove-in-values
-    path: ./remove-in-values.beek
+    target: ../../../../../../app{{url}}/form/values.ts
   - name: remove-in-initial-values
-    path: ./remove-in-initial-values.beek
+    target: ../../../../../../app{{url}}/form/initial-values.ts
   - name: remove-in-validation
-    path: ./remove-in-validation.beek
+    target: ../../../../../../app{{url}}/form/validation-schema.ts
   - name: remove-in-section
-    path: ./remove-in-section.beek
-
-files:
-  - path: ../../../../../../app{{url}}/form/section.tsx
-    rules:
-      - remove-in-section
-  - path: ../../../../../../app{{url}}/form/values.ts
-    rules:
-      - remove-in-values
-  - path: ../../../../../../app{{url}}/form/initial-values.ts
-    rules:
-      - remove-in-initial-values
-  - path: ../../../../../../app{{url}}/form/validation-schema.ts
-    rules:
-      - remove-in-validation
+    target: ../../../../../../app{{url}}/form/section.tsx

@@ -16,21 +16,10 @@ variables:
 
 rules:
   - name: add-actions-props
-    path: ./add-actions-props.beek
+    target: ../../../../../../app{{url}}/form/actions/actions-props.ts
   - name: add-actions
-    path: ./add-actions.beek
+    target: ../../../../../../app{{url}}/form/actions/actions.tsx
   - name: add-actions-to-form
-    path: ./add-actions-to-form.beek
-
-files:
-  - path: ../../../../../../app{{url}}/form/actions/actions-props.ts
-    rules:
-      - add-actions-props
-  - path: ../../../../../../app{{url}}/form/actions/actions.tsx
-    rules:
-      - add-actions
-  - path: ../../../../../../app{{url}}/form/form.tsx
-    rules:
-      - add-actions-to-form
+    target: ../../../../../../app{{url}}/form/form.tsx
     
     

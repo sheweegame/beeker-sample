@@ -18,9 +18,4 @@ variables:
 
 rules:
   - name: add-chart-data
-    path: ./add-chart-data.beek
-
-files:
-  - path: ../../../../../../app{{url}}/data/chart/chart.ts
-    rules:
-      - add-chart-data
+    target: ../../../../../../app{{url}}/data/chart/chart.ts

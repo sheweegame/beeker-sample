@@ -13,9 +13,4 @@ variables:
 
 rules:
   - name: add-bar-data
-    path: ./add-bar-data.beek
-
-files:
-  - path: ../../data/bars.ts
-    rules:
-      - add-bar-data
+    target: ../../data/bars.ts

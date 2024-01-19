@@ -10,46 +10,20 @@ variables:
 
 rules:
   - name: add-values
-    path: ./add-values.beek
+    target: ../../../../../app{{url}}/form/values.ts
   - name: add-initial-values
-    path: ./add-initial-values.beek
+    path: ../../../../../app{{url}}/form/initial-values.ts
   - name: add-validation
-    path: ./add-validation.beek
+    path: ../../../../../app{{url}}/form/validation-schema.ts
   - name: add-hook
-    path: ./add-hook.beek
+    path: ../../../../../app{{url}}/form/hook.tsx
   - name: add-section-props
-    path: ./add-section-props.beek
+    path: ../../../../../app{{url}}/form/section-props.ts
   - name: add-section
-    path: ./add-section.beek
+    path: ../../../../../app{{url}}/form/section.tsx
   - name: add-component
-    path: ./add-component.beek
+    path: ../../../../../app{{url}}/form/form.tsx
   - name: add-form-to-page
-    path: ./add-form-to-page.beek
-
-files:
-  - path: ../../../../../app{{url}}/form/values.ts
-    rules:
-      - add-values
-  - path: ../../../../../app{{url}}/form/initial-values.ts
-    rules:
-      - add-initial-values
-  - path: ../../../../../app{{url}}/form/validation-schema.ts
-    rules:
-      - add-validation
-  - path: ../../../../../app{{url}}/form/hook.tsx
-    rules:
-      - add-hook
-  - path: ../../../../../app{{url}}/form/section-props.ts
-    rules:
-      - add-section-props
-  - path: ../../../../../app{{url}}/form/section.tsx
-    rules:
-      - add-section
-  - path: ../../../../../app{{url}}/form/form.tsx
-    rules:
-      - add-component
-  - path: ../../../../../app{{url}}/page.tsx
-    rules:
-      - add-form-to-page
+    path: ../../../../../app{{url}}/page.tsx
     
     
