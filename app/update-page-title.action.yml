@@ -10,9 +10,4 @@ variables:
 
 rules:
   - name: update-page-title
-    path: ./update-page-title.beek
-
-files:
-  - path: ./page.tsx
-    rules:
-      - update-page-title
+    target: ./page.tsx

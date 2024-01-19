@@ -9,9 +9,4 @@ variables:
 
 rules:
   - name: update-chart-title
-    path: ./update-chart-title.beek
-
-files:
-  - path: ./page.tsx
-    rules:
-      - update-chart-title
+    target: ./page.tsx

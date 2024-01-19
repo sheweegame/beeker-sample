@@ -13,9 +13,4 @@ variables:
 
 rules:
   - name: update-bar-data
-    path: ./update-bar-data.beek
-
-files:
-  - path: ./page.tsx
-    rules:
-      - update-bar-data
+    target: ./page.tsx
