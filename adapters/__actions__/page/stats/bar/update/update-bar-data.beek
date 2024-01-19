@@ -1,2 +1,2 @@
 The language is typescript and the frameworks are react.js and next.js.
-Update object with attribute name={{targetBarName}} to value {{newBarValue}} in card data {{targetCardTitle}}.
+Update object with attribute name={{targetBarName}} to value {{newBarValue}} in data constant.

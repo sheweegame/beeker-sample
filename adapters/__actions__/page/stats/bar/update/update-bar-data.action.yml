@@ -4,8 +4,12 @@ description: Allow to update an existing bar in a card summary (like Website for
 group: '[Page] [Stats] - Update'
 
 variables:
-  - name: targetCardTitle
-    label: Target card title
+  - name: url
+    label: Page url
+    default_value: /dashboard
+  - name: targetCardId
+    label: Target card Id
+    default_value: Website
   - name: targetBarName
     label: Target bar name
   - name: newBarValue
@@ -13,4 +17,4 @@ variables:
 
 rules:
   - name: update-bar-data
-    target: ../../data/bars.ts
+    target: ../../../../../../app{{url}}/data/stats/{{targetCardId}}/stats.ts

@@ -4,11 +4,15 @@ description: Allow to update title in a stats card
 group: '[Page] [Stats] - Update'
 
 variables:
-  - name: oldName
-    label: Old name
+  - name: url
+    label: Page url
+    default_value: /dashboard
+  - name: targetCardId
+    label: Target card Id
+    default_value: Website
   - name: newName
     label: New name
 
 rules:
   - name: update-stats-card-title
-    target: ../../cards/stats.tsx
+    target: ../../../../../app{{url}}/cards/stats/{{targetCardId}}/card.tsx

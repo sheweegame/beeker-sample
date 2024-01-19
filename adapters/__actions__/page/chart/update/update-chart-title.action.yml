@@ -4,9 +4,12 @@ description: Allow to update dashboard page title
 group: '[Page] [Chart] - Update'
 
 variables:
+  - name: url
+    label: Page url
+    default_value: /dashboard
   - name: title
     label: Title
 
 rules:
   - name: update-chart-title
-    target: ../../cards/chart.tsx
+    target: ../../../../../app{{url}}/cards/chart.tsx
