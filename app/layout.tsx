@@ -1,14 +1,10 @@
 import './globals.css';
-
-import { Analytics } from '@vercel/analytics/react';
 import Nav from './nav';
-import Toast from './toast';
-import { Suspense } from 'react';
 
 export const metadata = {
-  title: 'Beeker - Demo dashboard',
+  title: 'Beeker - Demo',
   description:
-    'A user admin dashboard configured with Next.js, PlanetScale, NextAuth, Tailwind CSS, TypeScript, ESLint, and Prettier.'
+    'A demo app configured with Next.js, PlanetScale, NextAuth, Tailwind CSS, TypeScript, ESLint, and Prettier.'
 };
 
 export default async function RootLayout({
@@ -19,12 +15,8 @@ export default async function RootLayout({
   return (
     <html lang="en" className="h-full bg-gray-50">
       <body className="h-full">
-        <Suspense>
-          <Nav />
-        </Suspense>
+        <Nav />
         {children}
-        <Analytics />
-        <Toast />
       </body>
     </html>
   );
