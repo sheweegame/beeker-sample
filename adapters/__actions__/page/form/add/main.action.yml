@@ -12,18 +12,18 @@ rules:
   - name: add-values
     target: ../../../../../app{{url}}/form/values.ts
   - name: add-initial-values
-    path: ../../../../../app{{url}}/form/initial-values.ts
+    target: ../../../../../app{{url}}/form/initial-values.ts
   - name: add-validation
-    path: ../../../../../app{{url}}/form/validation-schema.ts
+    target: ../../../../../app{{url}}/form/validation-schema.ts
   - name: add-hook
-    path: ../../../../../app{{url}}/form/hook.tsx
+    target: ../../../../../app{{url}}/form/hook.tsx
   - name: add-section-props
-    path: ../../../../../app{{url}}/form/section-props.ts
+    target: ../../../../../app{{url}}/form/section-props.ts
   - name: add-section
-    path: ../../../../../app{{url}}/form/section.tsx
+    target: ../../../../../app{{url}}/form/section.tsx
   - name: add-component
-    path: ../../../../../app{{url}}/form/form.tsx
+    target: ../../../../../app{{url}}/form/form.tsx
   - name: add-form-to-page
-    path: ../../../../../app{{url}}/page.tsx
+    target: ../../../../../app{{url}}/page.tsx
     
     
